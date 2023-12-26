@@ -1,0 +1,106 @@
+/* global css */
+@import url("https://fonts.googleapis.com/css2?family=Dosis&family=Poppins:wght@300;400;500;600&family=Work+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+body {
+  background-image: url(assets/images/background-pattern-desktop.svg);
+  background-color: hsl(275, 100%, 97%);
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+}
+p {
+  color: rgb(85, 85, 85);
+  font-size: 16px;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+.FAQs {
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 100%);
+  border-color: hsl(0, 0%, 100%);
+  gap: 10px;
+  margin: 10%;
+  width: 500px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 40px;
+  align-content: center;
+  box-shadow: 0 1rem 3rem rgba(rgb(255, 255, 255), 0.175);
+}
+.FAQs_container {
+  display: flex;
+  gap: 1.1rem;
+}
+.FAQs_title {
+  color: hsl(292, 42%, 14%);
+  font-weight: 800;
+  font-size: x-large;
+}
+.FAQs hr {
+  border: 1px solid var(hsl(275, 100%, 97%));
+  opacity: 50%;
+}
+.title_question {
+  font-size: 16px;
+}
+.icon-plus,
+.icon-minus {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 376px) {
+  .FAQs {
+    width: 220px;
+    padding: 10px;
+    justify-content: space-between;
+    align-content: center;
+    margin: 55%;
+    font-size: 10px;
+    font-weight: 600;
+  }
+
+  /* .container_question {
+    font-size: 8px;
+  } */
+}
+@media only screen and (max-width: 600px) and (min-width: 376px) {
+  .FAQs {
+    width: 250px;
+    padding: 20px;
+    justify-content: space-between;
+    align-content: center;
+    margin: 50%;
+  }
+  .title_question {
+    font-size: 10px;
+    font-weight: 600;
+  }
+}
+@media screen and (min-width: 790px) {
+  .FAQs {
+    margin: 15%;
+  }
+}
